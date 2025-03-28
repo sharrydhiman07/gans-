@@ -20,19 +20,14 @@ Evaluate GAN performance on medical image synthesis using:
 
 ## 📊 Evaluation Results
 
-| Model     | Inception Score (IS) | Fréchet Inception Distance (FID) |
-|-----------|----------------------|----------------------------------|
-| **LSGAN** | 4.12 ± 0.18          | 41.5                             |
-| **WGAN**  | 3.95 ± 0.22          | 47.2                             |
-| **WGAN-GP** | 4.68 ± 0.20        | 34.9                             |
+| Model       | Inception Score (IS) | Fréchet Inception Distance (FID) |
+|-------------|----------------------|----------------------------------|
+| **LSGAN**   | 1.74 ± 0.11          | 248.95266723632812               |
+| **WGAN**    | 2.11 ± 0.14          | 241.6168975830078                |
+| **WGAN-GP** | 1.88 ± 0.13          | 243.53286743164062               |
 
 ✅ **WGAN-GP** performed the best in both realism and closeness to real distribution.
 
-## 🖼 Sample Outputs
-
-| LSGAN | WGAN | WGAN-GP |
-|-------|------|---------|
-| ![](images/lsgan_45.png) | ![](images/wgan_45.png) | ![](images/wgan-gp_45.png) |
 
 ## 📂 Folder Descriptions
 
