@@ -1,0 +1,69 @@
+🧠 Generative Adversarial Networks on Medical Images: A Comparative Study
+By Sharry Dhiman (https://www.linkedin.com/in/sharrydhiman)
+
+🧪 TL;DR
+I trained and evaluated three popular GAN architectures — LSGAN, WGAN, and WGAN-GP — on the PathMNIST dataset from MedMNIST to generate synthetic medical images.
+
+I compared their performance using:
+- Visual inspection
+- Inception Score (IS)
+- Fréchet Inception Distance (FID)
+
+🚨 WGAN-GP came out on top!
+
+💡 Why Medical Image Generation?
+Medical datasets are often small, private, or expensive to collect. Using GANs to generate high-quality synthetic samples can:
+- Improve dataset size
+- Enhance model training
+- Help with medical image augmentation & privacy
+
+🧰 Dataset: PathMNIST
+- 28x28 RGB images
+- 9 classes of colorectal tissue types
+- Total images: 89,996
+- Open-source: https://medmnist.com
+
+⚙️ The Models
+
+GAN Type   | Core Idea
+-----------|----------------------------------------------
+LSGAN      | Uses MSE loss instead of BCE for smoother gradients
+WGAN       | Introduces Wasserstein loss for better stability
+WGAN-GP    | Adds gradient penalty (GP) to improve convergence
+
+📊 Evaluation Metrics
+
+Metric          | What it Measures
+----------------|------------------------------------------
+Inception Score | Image realism + diversity (higher is better)
+FID Score       | Closeness to real distribution (lower is better)
+
+🔍 Visual Results
+(images shown in the GitHub README)
+
+📈 Quantitative Results
+
+Model     | Inception Score      | FID Score
+----------|----------------------|-----------
+LSGAN     | 1.74 ± 0.11          | 248.95266723632812
+WGAN      | 2.11 ± 0.14          | 241.6168975830078
+WGAN-GP   | 1.88 ± 0.13          | 243.53286743164062
+
+🔑 WGAN-GP outperformed the rest in both IS and FID.
+
+🧪 Tools Used
+- PyTorch
+- TorchMetrics + torch-fidelity
+- TensorBoard
+
+📂 GitHub Repo
+https://github.com/sharrydhiman07/gans
+
+🤖 Takeaways
+- GANs can generate synthetic medical images realistically
+- WGAN-GP remains the most stable and visually pleasing
+- Use GANs to augment medical datasets and reduce privacy concerns
+
+🔗 Connect with Me
+Sharry Dhiman – Founder @ Aurora Creative
+LinkedIn: https://www.linkedin.com/in/sharrydhiman
