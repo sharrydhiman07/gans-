@@ -57,7 +57,7 @@ WGAN-GP   | 1.88 ± 0.13          | 243.53286743164062
 - TensorBoard
 
 📂 GitHub Repo
-https://github.com/sharrydhiman07/gans
+https://github.com/sharrydhiman07/gans-
 
 🤖 Takeaways
 - GANs can generate synthetic medical images realistically
